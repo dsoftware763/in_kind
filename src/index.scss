@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap');
+@import './variable.scss';
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body, input, textarea{
+  font-family: 'Montserrat', sans-serif !important;
+}
+input:focus{outline: 0}
+a{
+  text-decoration: none;
+}
+p{
+  font-size:14px;
+}
+.color-label{
+  color: $label-color;
+}
+.color-primary{
+  color: $primary;
+}
+.color-grey{
+  color:$color-grey;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.img-fluid{
+  max-width: 100%;
+  display: block;
+}
+.p-0{
+  padding: 0px !important;
+}
+.pt-0{
+  padding-top: 0px !important;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+.pl-15{
+  padding-left: 15px;
+}
+.pt-15{
+  padding-top: 15px;
+}
+.pb-15{
+  padding-bottom: 15px;
+}
+.pr-15{
+  padding-right: 15px;
+}
+.p-15{
+  padding: 15px;
+}
+.h-100{
+  min-height: 100vh;
+}
+.h-45{
+  height: 45px;
+}
+.w-100{
+  width: 100%;
+}
+.font-12{
+  font-size: 12px;
+}
+.font-11{
+  font-size: 11px;
+}
+.font-13{
+  font-size: 13px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.fontWeight-600{
+  font-weight: 600;
+}
+.fontWeight-500{
+  font-weight: 500;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+.position-fixed{
+  position:fixed;
+}
+.position-absolute{
+  position:absolute;
+}
+.position-relative{
+  position:relative;
+}
+.flex {
+  display: flex;
+}
+.d-none{
+  display: none !important;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.backIcon{
+  padding-bottom: 10px;
+}
+.btnPrimary{
+    background: linear-gradient($primary, #4bb6ec);
+    color: $color-white !important;
+    font-weight: 600 !important;
+    padding: 12px 93px !important;
+    border-radius: 51px !important;
+    margin-top: 20px !important;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    &.btnWarning{
+      background: #fec156;
+    }
+    &.btnList{
+      padding: 8px 12px !important;
+    }
+    &.btnSmall{
+      padding:15px !important;
+      font-size: 0.8rem;
+    }
+    &.btnChatSend{
+      padding: 4px 5px !important;
+      margin: 0px !important;
+    }
+}
+.drawerBack{
+  .MuiDrawer-paper{
+    background-image: url(./assets/images/background_image.png);
+    background-repeat: no-repeat;
+    padding: 40px 35px 0px;
+    background-size: contain;
+    justify-content: space-between;
+    @media only screen and (max-width: 600px){
+      background-size: 100% 80%;
+      padding: 40px 20px 0px;
+    } 
+  }
+  .logoutBtn{
+    margin-bottom: 65px;
+  }
+  .logo{
+    img{
+      width: 300px;
+      @media only screen and (max-width: 600px){
+        width: 100%;
+      }
+    }
+  }
+  .menu {
+    padding-top: 40px;
+    @media only screen and (max-width: 600px){
+      padding-top: 25px;
+    }
+    li{
+      display: block;
+      a{
+        text-decoration: none;
+        color: #fff;
+        line-height: 60px;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        @media only screen and (max-width: 600px){
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}
+.cardListing {
+  background: $color-white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  .cardItem_detail{
+    line-height: 20px;
+  }
+  .imgSqu{
+    width: 100%;
+    height: 55px;
+    object-fit: cover;
+  }
+}
+.backSplash{
+  background: url(./assets/images/bg_pattren.png);
+  background-size: 100%;
+}
+.boxLogin{
+  max-width: 460px;
+  width: 100%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px 0px 0px;
+  border-radius: 6px;
+}
+.paraHead{
+  font-weight: 600;
+  padding: 35px 0px;
+  font-size: 15px;
+  line-height: 24px;
+}
+.selectProfile{
+  width: 100%;
+}
+.fromDesign {.btnLogin{
+  background: $primary;
+  border-radius: 50%;
+  padding: 23px 25px;
+  box-shadow: 60px 0px 105px rgba(0, 0, 0, 0.20);}
+  .btnLogin:hover{
+    background: $primary;
+  }
+}
+.loginHeader{
+  background: url(./assets/images/ic_topheader_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 90px;
+}
+.donation-heading{
+  color:$color-white;
+  padding-left: 15px;
+  font-size: 1.3em;
+}
+.textarea{
+  color: $placeholder-color !important;  
+  border-color: $placeholder-color-border !important;
+  border: 1px solid;
+  width: 95%;
+  height: 300px;
+  font-size: 12px;
+  border: 1px solid;
+  font-weight: 600;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif !important;
+  border-radius: 3px;
+  &:focus{
+    border-color: $placeholder-color-border !important;
+    border-width: 2px;
+    outline: none;
+  }
+}
+.formInput{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+  .MuiInputLabel-shrink{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $placeholder-color !important;
+  }
+  .MuiOutlinedInput-root.Mui-focused{
+    .MuiOutlinedInput-notchedOutline{
+      border-color: $placeholder-color-border !important;
+    }
+  }
+  .MuiInput-underline{
+    &:before{
+      border-color: $placeholder-color-border !important;
+    }
+    &:after{
+      border-color: $placeholder-color-border !important;
+    }
+  }
+}
+.loginSignup {
+  .loginHeader{
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: center;
+    .tabs_Signup{
+      text-transform: capitalize;
+      font-size: 19px;
+      font-weight: 600;
+    }
+    .MuiTabs-indicator{
+      background: transparent;
+    }
+  }
+  .loginHeading{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+    img{
+      padding: 0px 10px;
+    }
+  }
+  .loginForm{
+    background-color:$color-white;
+    background-image: url(./assets/images/ic_active_tab_bordertop.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius:30px;
+    padding: 10px 20px;
+    .btnSpace_Login {
+      padding: 110px 0px;
+    }
+    .signupInfo {
+      position: relative;
+      margin-top: 15px;
+      textarea{
+        border: 1px solid $placeholder-color-border;
+        padding: 15px 10px;
+        color: $color-grey;
+        font-size: 13px;
+        width: 95%;
+        border-radius: 6px;
+        &::placeholder{
+          color: $color-grey;
+        }
+      }
+      &::before{
+        content:url(./assets/images/ic_active_tab_bordertop.png);
+        position: absolute;
+        top: -7px;
+      }
+    }
+    .fileName{
+      img{
+        border: 1px solid $placeholder-color-border;
+        margin-top: 10px;
+        padding: 4px;
+      }
+    }
+    .uploadStories{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      img{
+        width: 30%;
+        border-radius: 5px;
+        margin-right: 3px;
+      }
+    }
+  }
+}
+.forgotPass {
+  padding: 20px 20px;
+}
+.headingPop {
+  font-size: 20px;
+  font-weight: 600;
+  .headingBorder{
+    width:50%;
+    height: 4px;
+    @media only screen and (max-width: 600px){
+      width:100%;
+    }
+  }
+}
+.organizationSelect {
+  padding: 20px 20px;
+  .Subheading {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  .oragSelectBox {
+    background:$color-white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
+    padding: 15px 15px;
+    margin-bottom: 15px;
+  }
+  input:checked{
+    ~ .oragSelectBox {
+      background: rgba(12, 12, 12, 0.02);
+    }
+  }
+}
+.causeArea{
+  .oragSelectBox {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+  }
+  input:checked {
+    ~ .oragSelectBox {
+      filter: grayscale(100%);
+      background: transparent;
+      p{
+        color: $color-grey;
+      }
+    }
+  }
+}
+.footerMenu {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  background: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+  .navMenu {
+    text-align: center;
+    li {
+      display: inline-block;
+      
+      a{
+        color: $color-grey;
+        text-transform: capitalize;
+        padding: 20px 10px 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0px 15px;
+        @media (max-width: 600px){
+          font-size: 11px;
+          margin: 0px 4px;
+        }
+        @media (max-width: 320px){
+          padding: 20px 5px 15px;
+        }
+        .iconTab{
+          width: 25px;
+          @media (max-width: 600px){
+            width: 18px;
+          }
+        }
+        .activeTab{
+          display: none;
+        }
+      }
+      .active {
+        color: $primary;
+        &.postLink{
+          &:before{
+            content: '';
+            display: none
+          }
+        }
+        &:before{
+          content: '';
+          background-image: url(./assets/images/ic_active_tab_bordertop.png);
+          width: 100%;
+          position: absolute;
+          top: 0px;
+          background-size: 100%;
+          display: inline-block;
+          height: 5px;
+          background-repeat: no-repeat;
+        }
+        .iconTab{
+          display: none;
+        }
+        .activeTab{
+          display: block;
+          width: 25px;
+          @media (max-width: 600px){
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.dashboard{
+  @media only screen and (max-width: 600px){
+    padding: 0px !important;
+  }
+  .dashboardBox{
+    max-width: 460px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 25px 0px 0px;
+    border-radius: 6px;
+    padding-bottom: 100px;
+    @media only screen and (max-width: 600px){
+      box-sizing: border-box;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .imagePost{
+      background: #f3f4f8;
+      display: block;
+      padding: 30px 0px;
+    }
+    .uploadPhoto{
+      font-weight: bold;
+      font-size: 14px;
+      color: #cdced4;
+      padding-top: 5px;
+    }
+  }
+  .MuiTabs-indicator{
+    display: none;
+  }
+  .donation_tabs{
+    margin-bottom: 25px;
+    .donationSelect_Tab{
+      color: $placeholder-color;
+      border-radius: 50px;
+      background: $placeholder-color-border;
+      padding: 0px 20px;
+      margin-right: 15px;
+      @media only screen and (max-width: 600px){
+        padding: 0px 15px;
+        margin-right: 10px;
+      }
+    }
+    
+    .Mui-selected {
+      background: linear-gradient($primary, #4bb6ec);
+      color: $color-white;
+    }
+  }
+}
+.seacrh_filter{
+  margin-bottom: 15px;
+  .seacrhBar{
+    background: #f1f3f5;
+    padding: 7px 10px;
+    border-radius: 50px;
+  }
+}
+.nameAddress {
+  padding-bottom: 30px;
+  h4{
+    font-size: 25px;
+  }
+}
+.profileList{
+  list-style: none;
+  line-height: 25px;
+  border-bottom: 1px solid $placeholder-color-border;
+  margin-bottom: 15px;
+  .MuiInputLabel-shrink{
+    font-size: 11px;
+  }
+  p{
+    padding-bottom: 5px;
+  }
+}
+.profileImg{
+  width: 150px;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  .profileImgChange {
+    border-radius: 50%;
+    width: 100%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.17);
+    border: 8px solid $color-white;
+  }
+}
+.messaging{
+  .chatList{
+    border-bottom: 1px solid $placeholder-color-border;
+    padding-bottom: 10px;
+    .chatProfile{
+      width: 53px;
+      border-radius: 50%;
+      height: 53px;
+      object-fit: cover;
+    }
+    .messageNumber{
+      background: linear-gradient($primary, #4bb6ec);
+      color: $color-white;
+      border-radius: 50%;
+      // padding: 2px 6px;
+      font-size: 13px;
+      font-weight: 500;
+      width: 23px;
+      display: block;
+      float: right;
+      height: 23px;
+      text-align: center;
+    }
+  }
+  .messages{
+    height: 85vh;
+    overflow: auto;
+    .message{
+      list-style: none;
+      width: 75%;
+      color:$color-white;
+      margin-bottom: 10px;
+      .chatProfile{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .message-body{
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 13px;
+        margin-left: 10px;
+      }
+      .messageRead {
+        width: 100%;
+        float: right;
+        text-align: right;
+        color: $label-color;
+        font-size: 11px;
+        font-weight: 600;
+        padding-top: 5px;
+        img{
+          padding-right: 10px;
+        }
+      }
+      .chat-bubble{
+        background: $label-color;
+        border-radius: 35px 50px 50px 0px;
+      }
+      .user-chat-bubble{
+        background: linear-gradient($primary, #4bb6ec);
+        border-radius: 50px 35px 0px 50px;
+      }
+    }
+    .pull-left{
+      float: left;
+    }
+    .pull-right{
+      float: right;
+    }
+  }
+  .chatFrom{
+    background: #fff;
+    box-shadow: 0px -14px 27px -19px rgba(0, 0, 0, 0.48);
+    padding: 5px 15px;
+    box-sizing: border-box;
+    position: sticky;
+    border: 0px;
+    .form-control{
+      width:100%;
+      input{
+        width: 100%;
+        height: 45px;
+        border: 0px;
+      }
+    }
+    .MuiButton-root.Mui-disabled {
+      color: rgba(0, 0, 0, 0.26);
+      filter: grayscale(100%);
+    }
+  }
+}
+.chatDetail{
+  height: 90vh;
+  overflow-y: auto;
+}
+.postImage{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.noMatch{
+  h3{
+    font-size: 45px;
+    padding-bottom: 10px;
+  }
+  p{
+    font-size: 17px;
+    padding-bottom: 38px;
+    font-weight: 600;
+  }
+}
+.postItem-link{
+  padding: 25px 0px;
+  .donateHome-img {
+    img{
+      width: 230px;
+    }
+  }
+  .postBtn-home{
+    padding: 15px 0px 15px;
+    a{
+      width: 100%;
+      padding: 17px 0px !important;
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width: 600px){
+  .pl-xs-0{
+    padding-left: 0px;
+  }
+  .forgotPass .btnPrimary{
+    padding: 10px 35px !important;
+  }
+  .cardListing{
+    .btnPrimary{
+      font-size: 10px;
+    }
+  }
+  .cardItem_detail{
+    &.home_List{
+    width: 45%;
+    h4{
+      font-size: 13px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p{
+      font-size: 9px;
+    }
+  }
+  }
+}
+.MuiRadio-colorPrimary.Mui-checked {
+  color: #34a3f5 !important;
+}
